@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TipTime.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+
+            <Label
+                Text="Valor"/>
+            
+            <Entry
+                x:Name="ValorTotalEntry"
+                Placeholder="Coloque o valor:"
+                Keyboard="Numeric"
+                TextChanged="ValorTotalEntry_TextChanged"/>
+
+            <HorizontalStackLayout
+             Padding="30,0"
+             Spacing="25">
+                <Label
+                    Text="Gorjeta:"
+                />
+                <Label
+                    x:Name="ValorGorjetaLabel"
+                    Text="0.00"
+                />
+              </HorizontalStackLayout>
+
+
+            <HorizontalStackLayout
+            Padding="30,0"
+            Spacing="25">
+                <Label
+                    Text="Total:"
+                 />
+                <Label
+                    x:Name="ValorTotalLabel"
+                    Text="0.00"
+                 />
+             </HorizontalStackLayout>
+
+
+            <HorizontalStackLayout
+            Padding="30,0"
+            Spacing="25">
+                <Label
+                    Text="Porcentagem da gorjeta:"/>
+                <Label
+                    x:Name="PorcentagemGorjetaLabel"
+                    Text="0.00"
+                  />
+            </HorizontalStackLayout>
+            
+    
+
+                    <Slider VerticalOptions="Center"
+                    Minimum="0"
+                    Maximum="100"
+                    x:Name="PorcentagemSlider"
+                    ValueChanged="PorcentagemSlider_ValueChanged"
+                     />
+
+            <HorizontalStackLayout
+                Padding="30,0"
+                Spacing="25">
+                <Button
+                    x:Name="Porcentagem15"
+                    Text="15%" 
+                    Clicked="Porcentagem15_Clicked"
+                    HorizontalOptions="Fill" 
+                    />
+                
+                <Button
+                    x:Name="Porcentagem20"
+                    Text="20%" 
+                    Clicked="Porcentagem20_Clicked"
+                    HorizontalOptions="Fill" />
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout
+                Padding="30,0"
+                Spacing="25">
+                <Button
+                    x:Name="ArredondamentoAcima"
+                    Text="Arredondamento Acima" 
+                    Clicked="ArredondamentoAcima_Clicked"
+                    HorizontalOptions="Fill" />
+
+                <Button
+                    x:Name="ArredondamentoAbaixo"
+                    Text="Arredondamento Abaixo" 
+                    Clicked="ArredondamentoAbaixo_Clicked"
+                    HorizontalOptions="Fill" />
+            </HorizontalStackLayout>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
