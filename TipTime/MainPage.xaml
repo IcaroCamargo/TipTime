@@ -96,6 +96,22 @@
                     HorizontalOptions="Fill" />
             </HorizontalStackLayout>
 
+            <HorizontalStackLayout
+                Padding="30,0"
+                Spacing="25">
+                <Button
+                    x:Name="ArredondarAcimaValorTotal"
+                    Text="Adicionar valor total"
+                    Clicked="ArredondarAcimaValorTotal_Clicked"
+                    HorizontalOptions="Fill"/>
+
+                <Button
+                    x:Name="ArredondarAbaixoValorTotal"
+                    Text="Subtrair valor total"
+                    Clicked="ArredondarAbaixoValorTotal_Clicked"
+                    HorizontalOptions="Fill"/>
+            </HorizontalStackLayout>
+
         </VerticalStackLayout>
     </ScrollView>
 
